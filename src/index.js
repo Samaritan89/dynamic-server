@@ -1,7 +1,7 @@
 const http = require('http');
 
 const compose = require('./util/compose');
-const router = require('./middleware/router');
+const routes = require('./route');
 const body = require('./middleware/body');
 
 const defaultConf = require('./config');
@@ -27,7 +27,7 @@ class Server {
       };
 
       // 按顺序调用中间件
-      compose([body, router])(ctx);
+      compose([body].concat(routes))(ctx);
     }).listen(port, () => {
       console.log(`Dynamic server started at port ${port}`);
     });
