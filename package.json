@@ -1,0 +1,23 @@
+{
+  "name": "dynamic-server",
+  "version": "1.0.0",
+  "description": "极简动态服务器",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Samaritan89/dynamic-server.git"
+  },
+  "keywords": [
+    "Koa",
+    "Server"
+  ],
+  "author": "Samaritan89",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Samaritan89/dynamic-server/issues"
+  },
+  "homepage": "https://github.com/Samaritan89/dynamic-server#readme"
+}
